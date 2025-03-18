@@ -89,7 +89,7 @@ def predict_stock_price(stock_symbol):
     pred_price = scaler.inverse_transform(pred_price)
     
     print(f'Predicted Closing Price for {stock_symbol} on {today}: {pred_price[0][0]:.2f} USD')
-    return pred_price[0][0]
+    return float(pred_price[0][0])
 
-# Example usage:
-predict_stock_price("GOOG")
+# # Example usage:
+# predict_stock_price("GOOG")
